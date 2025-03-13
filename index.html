@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Serena Li - Personal Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="window.location.href='#greeting'">SL</div>
+        <nav>
+            <!-- <a href="#experiences">Experiences</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a> -->
+            <a href="/iml300">My Digital Art Portfolio</a>
+        </nav>
+    </header>
     <main>
-        <div class="navBar"></div>
-        <div class="mainContent">
-          
+        <div class="greeting" id="greeting">Hi!</div>
+        <div class="name">I'm SERENA LI</div>
+        <div class="details">
+            BSc <a href="#" class="blue-link">Computer Science</a><br>
+            Minor: <a href="#" class="blue-link">iOS Development</a> + <a href="#" class="blue-link">GIS and Sustainability Sciences</a> + <a href="#" class="blue-link">Digital Studies</a><br>
+            <a href="#" class="blue-link">USC</a> 26'
+        </div>
+        <div class="cta" onclick="window.location.href='/Serena_Li_resume.pdf'">
+            Resume <span class="arrow-down">↓</span>
         </div>
     </main>
-    <script src="background.js" class="background"></script>
-  </body>
+</body>
 </html>

@@ -1,0 +1,20 @@
+[ 
+    { 
+        "name" : "Workday Job Apps User Interface Research Project",
+        "tags": ["UI/UX", "Research", "School Project"],
+        "date": "August 2024 - May 2025",
+        "summary": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
+        "description": "Reinforced students' understanding of the course through both in-person office hours and async Q&A.",
+        "image_path": "/logo_usc.png",
+        "details_path": "hci"
+    },
+    { 
+        "name" : "C++ Games Class project",
+        "tags": ["C++", "Design Principle", "School Project"],
+        "date": "January 2025 - May 2025",
+        "summary": "...",
+        "description": "....",
+        "image_path": "/logo_usc.png",
+        "details_path": "repo/Game--"
+    }
+]

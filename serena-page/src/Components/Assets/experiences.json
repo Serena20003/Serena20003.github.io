@@ -5,7 +5,7 @@
         "tags": ["Tutoring", "Swift"],
         "date": "August 2024 - May 2025",
         "summary": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
-        "description": "Reinforced students' understanding of the course through both in-person office hours and async Q&A.",
+        "description": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
         "image_path": "/logo_usc.png",
         "details_path": ""
     },
@@ -22,8 +22,8 @@
         "name" : "Project Management Co-op on Marketing Team @ Blu Bathworks",
         "tags": ["WordPress", "Python", "Monday.com"],
         "date": "Jun 2023 - Aug 2023",
-        "summary": "Coordinated WordPress website project and accelerated website launch by 4 months.",
-        "description": "Programmatically-wise, programmed Python programs with CSV handling for product data to/from multiple platforms to reduce manual work by 85%. Recorded 30+ WordPress tutorials for staff to maintain the website to save costs of external developers.",
+        "summary": "Coordinated WordPress website project and accelerated website launch by 4 months",
+        "description": "Programmatically-wise, programmed Python programs with CSV handling for product data to/from multiple platforms to reduce manual work by 85%. Recorded 30+ WordPress tutorials for staff to maintain the website to save costs of external developers",
         "image_path": "/logo_blu.jpg",
         "details_path": ""
     }

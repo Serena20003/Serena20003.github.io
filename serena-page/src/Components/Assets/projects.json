@@ -12,8 +12,8 @@
         "name" : "C++ Games Class project",
         "tags": ["C++", "Design Principle", "School Project"],
         "date": "January 2025 - May 2025",
-        "summary": "...",
-        "description": "....",
+        "summary": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
+        "description": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
         "image_path": "/logo_usc.png",
         "details_path": "repo/Game--"
     }

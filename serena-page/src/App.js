@@ -21,7 +21,6 @@ function App() {
       <main>
       <Greeting />
       <Experiences />
-      <div style={{margin:"50px"}}/>
       <Projects />
       <About />
       <Contact />

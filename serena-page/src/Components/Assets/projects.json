@@ -3,10 +3,10 @@
         "name" : "Workday Job Apps User Interface Research Project",
         "tags": ["UI/UX", "Research", "School Project"],
         "date": "August 2024 - May 2025",
-        "summary": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
-        "description": "Reinforced students' understanding of the course through both in-person office hours and async Q&A.",
+        "summary": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
+        "description": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
         "image_path": "/logo_usc.png",
-        "details_path": "hci"
+        "details_path": ""
     },
     { 
         "name" : "C++ Games Class project",
@@ -16,5 +16,14 @@
         "description": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
         "image_path": "/logo_usc.png",
         "details_path": "repo/Game--"
+    },
+    { 
+        "name" : "CS Capstone: Fashion Marketplace App",
+        "tags": ["React Native", "Scrum", "School Project"],
+        "date": "January 2025 - May 2025",
+        "summary": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
+        "description": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
+        "image_path": "/logo_usc.png",
+        "details_path": ""
     }
 ]

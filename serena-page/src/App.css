@@ -11,10 +11,13 @@ html, body {
 }
 
 main {
-  padding: 6rem;
+  padding-left: 7vw;
+  padding-top: 4vh;
+  padding-right: 7vw;
+  padding-bottom: 4vh;
 }
 
-header {
+#navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,12 +49,12 @@ header {
 
 nav {
   display: flex;
-  gap: 2rem;
-  font-size: 20px;
+  gap: 2vw;
 }
 
 nav a {
   color: black;
+  font-size: 1.5vw;
 }
 
 .navClicked {
@@ -65,7 +68,7 @@ nav a {
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 5.5vw;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -95,7 +98,7 @@ a {
 }
 
 .body {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 nav a:hover {
@@ -110,7 +113,7 @@ canvas {
 
 .cta {
   margin-left: 1.1rem;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -120,9 +123,9 @@ canvas {
 }
 
 .arrow-down {
-  margin-top: 5rem;
+  margin-top: 6vh;
   color: #4B9AFF;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   text-align: center;
   transition: ease 0.2s;
   margin-bottom: 3rem;
@@ -130,7 +133,7 @@ canvas {
 }
 
 .arrow-down:hover {
-  margin-top: 4.5rem;
+  margin-top: 5vh;
   transition: ease 0.2s;
 }
 
@@ -152,7 +155,7 @@ canvas {
   border-radius: 20px;
   background-color: rgba(239, 239, 239, 0.4);
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.45);
-  height: 450px;
+  min-height: fit-content;
   padding:10px;
   display:grid;
   grid-template-rows: 40% 60%;
@@ -168,7 +171,7 @@ canvas {
 
 .card .imageWrapper img {
   max-width: 100%;
-  max-height:100%;
+  max-height:10vw;
   aspect-ratio: initial;
 }
 
@@ -183,7 +186,6 @@ canvas {
   gap: 10px; 
   margin-right: 5px;
   display: inline-flex;
-  font-size: 12px;
 }
 
 .card .label span {
@@ -192,26 +194,26 @@ canvas {
   display: flex; 
   flex-direction: column; 
   color: black; 
-  font-size: 14px; 
+  font-size: 0.8vw; 
   font-family: Lemon; 
   font-weight: 400; 
   word-wrap: break-word
 }
 
 .card .title {
-  font-size: 24px;
+  font-size: 1.5vw;
   margin-top: 0rem;
   margin-bottom: 0.5rem;
 }
 
-.card .cart_text {
-  font-size: 16px;
+.card .card_text {
+  font-size: 1vw;
   margin-top: 0.5rem;
 }
 
 .card .read_more {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 0.8vw;
   color:#4495FF;
   text-decoration: underline;
 }
@@ -225,6 +227,11 @@ canvas {
   cursor: pointer;
 }
 
+form .card {
+    row-gap: 5vh;
+    grid-template-rows: max-content;
+}
+
 .contact_card_sub_grid {
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -234,7 +241,7 @@ canvas {
   font-family: 'Lemon', serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.5vw;
   background-color:#4495FF;
   border:none;
   border-radius: 23px;
@@ -256,13 +263,13 @@ canvas {
 
 #contact_error {
   color:#FF6464;
-  font-size: 14px;
+  font-size: 1.2vw;
 }
 
 .contact_card_clear {
   cursor:pointer;
   color:#FF6464;
-  font-size: 18px;
+  font-size: 1.5vw;
 }
 
 .contact_card_input {
@@ -270,7 +277,6 @@ canvas {
   border-radius: 23px;
   box-shadow: 0px 4px 31.5px rgba(0, 0, 0, 0.10);
   min-height:fit-content;
-  height: 50%;
   padding-left:10px;
 }
 
@@ -279,4 +285,43 @@ canvas {
   border-radius: 23px;
   box-shadow: 0px 4px 31.5px rgba(0, 0, 0, 0.10);
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cardGallery {
+    margin-top: 60px;
+    display:grid;
+    grid-template-columns: 1fr;
+    column-gap: 60px;
+    row-gap: 30px;
+  }
+  .card {
+    justify-self: center;
+    width:70%;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+  nav a, .body, .arrow-down, .card .title, .contact_card_submit, .contact_card_clear {
+    font-size: 0.8rem;
+  }
+
+  .cta, #contact_error {
+    font-size: 0.6rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .card .card_text {
+    font-size: 0.5rem;
+  }
+
+  .card .label span, .card .read_more {
+    font-size: 0.4rem;
+  }
 }

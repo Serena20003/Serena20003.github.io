@@ -18,7 +18,10 @@ const Contact = () => {
             document.getElementById("contact_error").hidden = true;
             const {error} = await supabase.from("ratings").insert(newRating).single();
             if (error)
-                console.error(error)
+            {
+                console.error(error);
+                return;
+            }
         }
     }
 
@@ -33,7 +36,7 @@ const Contact = () => {
             <p>I love getting to know new people!</p>
             <p>You can reach me through: <a href="mailto:scli@usc.edu">Email</a> or <a href="https://www.linkedin.com/in/serena-li-a068661a7/">LinkedIn</a></p>
             <form className='contact_card_container' onSubmit={submittedForm}>
-                <div className='card' style={{"grid-template-rows": "max-content"}}>
+                <div className='card'>
                     <div className='contact_card_sub_grid'>
                         <div>Leave your rating of my website:</div>
                         <div>

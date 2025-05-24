@@ -1,7 +1,4 @@
-import * as React from 'react'
 import Card from './Card'
-// import {Exerience, Project} from '../Interfaces'
-
 const CardGallery = ({type}) => {
     const data = {
         name: "Mobile App Developer @ Hemut", 

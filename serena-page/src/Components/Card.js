@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Label from './Label';
 import { useNavigate } from 'react-router-dom';
 
@@ -24,8 +23,8 @@ const Card = ({type, data}) => {
         <div>
         <div className='title'>{data.name}</div>
         {data.tags.map((tag) => <Label text={tag}></Label>)}
-        <div className='cart_text'>{data.date}</div>
-        <div className='cart_text'>{data.summary}</div>
+        <div className='card_text'>{data.date}</div>
+        <div className='card_text'>{data.summary}</div>
         {data.details_path!=="" && <div className='read_more' onClick={NavToProjDetail}>Read More →</div>}
         </div>
     </div> );

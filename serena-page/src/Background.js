@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ReactP5Wrapper } from '@p5-wrapper/react';
 
 var initialCirclesXY = {};
@@ -8,7 +7,7 @@ function background(p5)
 {
   p5.setup = () => 
   {
-    let canvas = p5.createCanvas(p5.windowWidth, p5.windowHeight);
+    let canvas = p5.createCanvas(p5.windowWidth+500, p5.windowHeight+500);
     // canvas.position(0, 0);
     canvas.style('z-index', '-1');
     class BackgroundCircle {

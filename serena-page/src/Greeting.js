@@ -1,4 +1,3 @@
-import * as React from 'react';
 import pdf from './Components/Assets/Serena_Li_resume_25S.pdf';
 const Greeting = () => {
     return (

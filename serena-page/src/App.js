@@ -1,6 +1,5 @@
-import * as React from 'react';
 import { Background } from './Background';
-import Navbar from './Navbar';
+import NavBar from './NavBar';
 import Greeting from './Greeting';
 import Experiences from './Experiences';
 import Projects from './Projects';
@@ -17,7 +16,7 @@ function App() {
     <Route path="/" element={
       <>
       <Background />
-      <Navbar/>
+      <NavBar/>
       <main>
       <Greeting />
       <Experiences />

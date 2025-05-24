@@ -1,7 +1,4 @@
-import * as React from 'react';
-// import CardGallery from './Components/CardGallery';
 import Card from './Components/Card'
-// import {Exerience} from './Interfaces'
 import experiences from './Components/Assets/experiences.json'
 
 const Experiences = () => {

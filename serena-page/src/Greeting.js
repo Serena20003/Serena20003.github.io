@@ -1,4 +1,4 @@
-import pdf from './Components/Assets/Serena_Li_resume_25S.pdf';
+import pdf from './Components/Assets/Serena_Li_resume_26S.pdf';
 const Greeting = () => {
     return (
         <>
@@ -8,7 +8,7 @@ const Greeting = () => {
         <div className="body">
             MS <span className="pink-ink">Computer Science</span><br/>
             BSc <span className="pink-ink">Computer Science</span><br/>
-            Previous Minors: <span className="pink-ink">iOS Development</span> + <span className="pink-ink">GIS and Sustainability Sciences</span> + <span className="pink-ink">Digital Studies</span><br/>
+            Minors: <span className="pink-ink">iOS Development</span> + <span className="pink-ink">GIS and Sustainability Sciences</span> + <span className="pink-ink">Digital Studies</span><br/>
             <span className="pink-ink">USC</span> 26'
         </div>
         <br/>

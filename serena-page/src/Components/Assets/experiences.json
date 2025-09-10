@@ -1,6 +1,15 @@
 
 [
     {
+        "name" : "Software Engineer Intern @ TourScout",
+        "tags": ["API Generation", "React", "Figma"],
+        "date": "Jun 2025 - Aug 2025",
+        "summary": "Created user flow for customizing multiple dynamic review displays on external sites.",
+        "description": "Created user flow for customizing multiple dynamic review displays on external sites.",
+        "image_path": "/logo_tourscout.svg",
+        "details_path": ""
+    },
+    {
         "name" : "iOS App Development course Learning Assistant @ USC",
         "tags": ["Tutoring", "Swift"],
         "date": "August 2024 - May 2025",

@@ -1,14 +1,5 @@
 [ 
     { 
-        "name" : "Workday Job Apps User Interface Research Project",
-        "tags": ["UI/UX", "Research", "School Project"],
-        "date": "August 2024 - May 2025",
-        "summary": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
-        "description": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
-        "image_path": "/logo_usc.png",
-        "details_path": ""
-    },
-    { 
         "name" : "C++ Games Class project",
         "tags": ["C++", "Design Principle", "School Project"],
         "date": "January 2025 - May 2025",
@@ -23,6 +14,15 @@
         "date": "January 2025 - May 2025",
         "summary": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
         "description": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
+        "image_path": "/logo_usc.png",
+        "details_path": ""
+    },
+    { 
+        "name" : "Workday Job Apps User Interface Research Project",
+        "tags": ["UI/UX", "Research", "School Project"],
+        "date": "August 2024 - Dec 2024",
+        "summary": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
+        "description": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
         "image_path": "/logo_usc.png",
         "details_path": ""
     }

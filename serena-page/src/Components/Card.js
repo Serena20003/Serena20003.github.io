@@ -18,7 +18,7 @@ const Card = ({type, data}) => {
     return ( 
     <div className='card'>
         <div className='imageWrapper'>
-        <img src={path_to_image} alt={data.image_path}/>
+        <img height="100%" src={path_to_image} alt={data.image_path}/>
         </div>
         <div>
         <div className='title'>{data.name}</div>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { supabase } from './supabase-client';
 import Star from './Components/Star';
+import { ToastContainer, toast, Slide } from 'react-toastify';
 
 const Contact = () => {
     const [newRating, setNewRating] = useState({rating: -1, suggestions: "", email: ""});
@@ -22,6 +23,11 @@ const Contact = () => {
                 console.error(error);
                 return;
             }
+            else {
+                toast('🥳 Thanks for leaving a comment!', {
+                    progress: undefined,
+                });
+            }
         }
     }
 
@@ -34,7 +40,7 @@ const Contact = () => {
         <div className='title' id="Contact">Contact</div>
         <div className='body'>
             <p>I love getting to know new people!</p>
-            <p>You can reach me through: <a href="mailto:scli@usc.edu">Email</a> or <a href="https://www.linkedin.com/in/serena-li-a068661a7/">LinkedIn</a></p>
+            <p>You can reach me through: <a href="mailto:scli@usc.edu">Email</a> or <a href="https://www.linkedin.com/in/-serena-li-/">LinkedIn</a></p>
             <form className='contact_card_container' onSubmit={submittedForm}>
                 <div className='card'>
                     <div className='contact_card_sub_grid'>
@@ -59,6 +65,18 @@ const Contact = () => {
                         <div id="contact_error" hidden>This form needs a rating to submit!</div>
                     </div>
                 </div>
+                <ToastContainer position="top-center"
+                    autoClose={2500}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable={false}
+                    pauseOnHover
+                    theme="light"
+                    transition={Slide}
+                />
             </form>
         </div>
         </>

@@ -1,39 +1,47 @@
-
 [
-    {
-        "name" : "Software Engineer Intern @ TourScout",
-        "tags": ["API Generation", "React", "Figma"],
-        "date": "Jun 2025 - Aug 2025",
-        "summary": "Created user flow for customizing multiple dynamic review displays on external sites.",
-        "description": "Created user flow for customizing multiple dynamic review displays on external sites.",
-        "image_path": "/logo_tourscout.svg",
-        "details_path": ""
-    },
-    {
-        "name" : "iOS App Development course Learning Assistant @ USC",
-        "tags": ["Tutoring", "Swift"],
-        "date": "August 2024 - May 2025",
-        "summary": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
-        "description": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
-        "image_path": "/logo_usc.png",
-        "details_path": ""
-    },
-    {
-        "name" : "Mobile App Developer @ Hemut",
-        "tags": ["React Native", "Figma"],
-        "date": "Dec 2024 - Apr 2025",
-        "summary": "Led the front-end development of mobile prototype centering assisting fleet drivers in routing, updating status, and vocal commands for fleet management startup",
-        "description": "Created mobile prototype centering assisting fleet drivers in routing, updating status, and vocal commands for fleet management startup",
-        "image_path": "/logo_hemut.png",
-        "details_path": ""
-    },
-    {
-        "name" : "Project Management Co-op on Marketing Team @ Blu Bathworks",
-        "tags": ["WordPress", "Python", "Monday.com"],
-        "date": "Jun 2023 - Aug 2023",
-        "summary": "Coordinated WordPress website project and accelerated website launch by 4 months",
-        "description": "Programmatically-wise, programmed Python programs with CSV handling for product data to/from multiple platforms to reduce manual work by 85%. Recorded 30+ WordPress tutorials for staff to maintain the website to save costs of external developers",
-        "image_path": "/logo_blu.jpg",
-        "details_path": ""
-    }
+	{
+		"name": "GIS and Application Solutions @ LADOT",
+		"tags": ["Object Recognition Model Training", "Typescript", "Python"],
+		"date": "Sep 2025 - Present",
+		"summary": "I build features for internal web app from user request, and create Python scripts to increase efficiency in training image object recgonizing models",
+		"description": "Created user flow for customizing multiple dynamic review displays on external sites.",
+		"image_path": "/logo_ladot.avif",
+		"details_path": ""
+	},
+	{
+		"name": "Software Engineer Intern @ TourScout",
+		"tags": ["API Generation", "React", "Figma"],
+		"date": "Jun 2025 - Aug 2025",
+		"summary": "Created user flow for customizing multiple dynamic review displays on external sites.",
+		"description": "Created user flow for customizing multiple dynamic review displays on external sites.",
+		"image_path": "/logo_tourscout.png",
+		"details_path": ""
+	},
+	{
+		"name": "iOS App Development course Learning Assistant @ USC",
+		"tags": ["Tutoring", "Swift"],
+		"date": "August 2024 - May 2025",
+		"summary": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
+		"description": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
+		"image_path": "/logo_usc.png",
+		"details_path": ""
+	},
+	{
+		"name": "Mobile App Developer @ Hemut",
+		"tags": ["React Native", "Figma"],
+		"date": "Dec 2024 - Apr 2025",
+		"summary": "Led the front-end development of mobile prototype centering assisting fleet drivers in routing, updating status, and vocal commands for fleet management startup",
+		"description": "Created mobile prototype centering assisting fleet drivers in routing, updating status, and vocal commands for fleet management startup",
+		"image_path": "/logo_hemut.png",
+		"details_path": ""
+	},
+	{
+		"name": "Project Management Co-op on Marketing Team @ Blu Bathworks",
+		"tags": ["WordPress", "Python", "Monday.com"],
+		"date": "Jun 2023 - Aug 2023",
+		"summary": "Coordinated WordPress website project and accelerated website launch by 4 months",
+		"description": "Programmatically-wise, programmed Python programs with CSV handling for product data to/from multiple platforms to reduce manual work by 85%. Recorded 30+ WordPress tutorials for staff to maintain the website to save costs of external developers",
+		"image_path": "/logo_blu.jpg",
+		"details_path": ""
+	}
 ]

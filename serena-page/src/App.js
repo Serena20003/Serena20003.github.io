@@ -7,6 +7,7 @@ import About from './About';
 import Contact from './Contact';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
     <Routes>
     <Route path="/" element={
       <>
-      <Background />
+      {/* <Background /> */}
       <NavBar/>
       <main>
       <Greeting />

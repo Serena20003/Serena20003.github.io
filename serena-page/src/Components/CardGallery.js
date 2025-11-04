@@ -9,7 +9,7 @@ const CardGallery = ({type}) => {
         image_path: "/logo_hemut.png"
     };
     return ( 
-        <div className='cardGallery'>
+        <div className='myCardGallery'>
         <Card data={data}/>
         <Card data={data}/>
         <Card data={data}/>

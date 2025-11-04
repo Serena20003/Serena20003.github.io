@@ -1,29 +1,43 @@
-[ 
-    { 
-        "name" : "C++ Games Class project",
-        "tags": ["C++", "Design Principle", "School Project"],
-        "date": "January 2025 - May 2025",
-        "summary": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
-        "description": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
-        "image_path": "/logo_usc.png",
-        "details_path": "repo/Game--"
-    },
-    { 
-        "name" : "CS Capstone: Fashion Marketplace App",
-        "tags": ["React Native", "Scrum", "School Project"],
-        "date": "January 2025 - May 2025",
-        "summary": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
-        "description": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
-        "image_path": "/logo_usc.png",
-        "details_path": ""
-    },
-    { 
-        "name" : "Workday Job Apps User Interface Research Project",
-        "tags": ["UI/UX", "Research", "School Project"],
-        "date": "August 2024 - Dec 2024",
-        "summary": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
-        "description": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
-        "image_path": "/logo_usc.png",
-        "details_path": ""
-    }
+[
+	{
+		"name": "Mental Health Spatial Distribution Research",
+		"tags": [
+			"GIS",
+			"Research",
+			"Spatial Data Analysis",
+			"Conference Presentation"
+		],
+		"date": "July 2025 - Present",
+		"summary": "Spatial research with SSI faculty; presented research poster at APCG 2025",
+		"description": "Spatial research with SSI faculty; presented research poster at APCG 2025",
+		"image_path": "/logo_ssi.avif",
+		"details_path": "https://drive.google.com/file/d/1PAz19VbO59gczHOGO1j5c77uOxNjh-32/view?usp=sharing"
+	},
+	{
+		"name": "C++ Games Class project",
+		"tags": ["C++", "Design Principle", "School Project"],
+		"date": "January 2025 - May 2025",
+		"summary": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
+		"description": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
+		"image_path": "/logo_usc.png",
+		"details_path": "repo/Game--"
+	},
+	{
+		"name": "CS Capstone: Fashion Marketplace App",
+		"tags": ["React Native", "Scrum", "MongoDB", "GraphQL"],
+		"date": "January 2025 - May 2025",
+		"summary": "Led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
+		"description": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
+		"image_path": "/logo_usc.png",
+		"details_path": ""
+	},
+	{
+		"name": "Workday Job Apps User Interface Research Project",
+		"tags": ["UI/UX", "Research", "School Project"],
+		"date": "August 2024 - Dec 2024",
+		"summary": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
+		"description": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
+		"image_path": "/logo_usc.png",
+		"details_path": "http://tinyurl.com/2s4ftnzh"
+	}
 ]

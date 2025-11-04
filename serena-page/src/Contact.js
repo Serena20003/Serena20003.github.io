@@ -36,15 +36,15 @@ const Contact = () => {
         setNewRating((prev) => ({...prev, rating: newStar}));
     }
     return ( 
-        <>
-        <div className='title' id="Contact">Contact</div>
-        <div className='body'>
+    <section className="site-section" id="Contact">
+    <div className='title'>Contact</div>
+    <div className='body'>
             <p>I love getting to know new people!</p>
             <p>You can reach me through: <a href="mailto:scli@usc.edu">Email</a> or <a href="https://www.linkedin.com/in/-serena-li-/">LinkedIn</a></p>
             <form className='contact_card_container' onSubmit={submittedForm}>
                 <div className='myCard'>
                     <div className='contact_card_sub_grid'>
-                        <div>Leave your rating of my website:</div>
+                        <div>Leave a rating for my website:</div>
                         <div>
                             {
                             colors.map((color, index) => <Star color={(index <= stars) ? "orange" : "gray"} onclick={() => UpdateRating(index)}/>)
@@ -79,7 +79,7 @@ const Contact = () => {
                 />
             </form>
         </div>
-        </>
+        </section>
     );
 }
  

@@ -3,11 +3,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Lemon', serif;
+  font-family: 'Lemon', serif !important;
   font-weight: 400;
   font-style: normal;
   min-height: 100vh;
   position: relative;
+  background: #fff170;
+  background: linear-gradient(138deg, rgba(255, 241, 112, 0.77) 0%, rgba(152, 247, 200, 0.71) 36%, rgba(122, 245, 235, 0.74) 70%, rgba(255, 241, 112, 0.73) 100%);
 }
 
 main {
@@ -75,7 +77,7 @@ nav a {
   scroll-margin-top: 144px;
 }
 
-.name {
+/* .name {
   filter:blur(5px);
   transition: 0.4s ease;
 }
@@ -83,7 +85,7 @@ nav a {
 .name:hover {
   filter:blur(0px);
   transition: 0.4s ease;
-}
+} */
 
 .blue-ink {
   color:#4495FF;
@@ -141,7 +143,7 @@ canvas {
   color: #4B9AFF;
 }
 
-.cardGallery {
+.myCardGallery {
   margin-top: 60px;
   display:grid;
   columns: 3;
@@ -150,7 +152,7 @@ canvas {
   row-gap: 30px;
 }
 
-.card {
+.myCard {
   width:100%;
   border-radius: 20px;
   background-color: rgba(239, 239, 239, 0.4);
@@ -162,20 +164,20 @@ canvas {
   row-gap: 10px;
 }
 
-.card .imageWrapper {
+.myCard .imageWrapper {
   width: 100%;
   display:flex;
   align-items: center;
   justify-content: center;
 }
 
-.card .imageWrapper img {
+.myCard .imageWrapper img {
   max-width: 100%;
   max-height:10vw;
   aspect-ratio: initial;
 }
 
-.card .label {
+.myCard .label {
   padding-left: 6px; 
   padding-right: 6px; 
   padding-top: 4px; 
@@ -188,7 +190,7 @@ canvas {
   display: inline-flex;
 }
 
-.card .label span {
+.myCard .label span {
   text-align: center; 
   justify-content: center; 
   display: flex; 
@@ -200,25 +202,25 @@ canvas {
   word-wrap: break-word
 }
 
-.card .title {
+.myCard .title {
   font-size: 1.5vw;
   margin-top: 0rem;
   margin-bottom: 0.5rem;
 }
 
-.card .card_text {
+.myCard .myCard_text {
   font-size: 1vw;
   margin-top: 0.5rem;
 }
 
-.card .read_more {
+.myCard .read_more {
   margin-top: 10px;
   font-size: 0.8vw;
   color:#4495FF;
   text-decoration: underline;
 }
 
-.card .read_more:hover {
+.myCard .read_more:hover {
   cursor:pointer;
 }
 
@@ -227,7 +229,7 @@ canvas {
   cursor: pointer;
 }
 
-form .card {
+form .myCard {
     row-gap: 5vh;
     grid-template-rows: max-content;
 }
@@ -288,14 +290,14 @@ form .card {
 }
 
 @media screen and (max-width: 768px) {
-  .cardGallery {
+  .myCardGallery {
     margin-top: 60px;
     display:grid;
     grid-template-columns: 1fr;
     column-gap: 60px;
     row-gap: 30px;
   }
-  .card {
+  .myCard {
     justify-self: center;
     width:70%;
   }
@@ -305,7 +307,7 @@ form .card {
     height: 30px;
     font-size: 20px;
   }
-  nav a, .body, .arrow-down, .card .title, .contact_card_submit, .contact_card_clear {
+  nav a, .body, .arrow-down, .myCard .title, .contact_card_submit, .contact_card_clear {
     font-size: 0.8rem;
   }
 
@@ -317,11 +319,11 @@ form .card {
     font-size: 2.5rem;
   }
 
-  .card .card_text {
+  .myCard .myCard_text {
     font-size: 0.5rem;
   }
 
-  .card .label span, .card .read_more {
+  .myCard .label span, .myCard .read_more {
     font-size: 0.4rem;
   }
 }

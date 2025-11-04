@@ -4,7 +4,7 @@ const Projects = () => {
     return ( 
         <>
         <div className='title' id="Projects">Projects</div>
-        <div className='cardGallery'>
+        <div className='myCardGallery'>
         {projects.map((proj) => <Card type='proj' data={proj}/>)}
         </div>
         </>

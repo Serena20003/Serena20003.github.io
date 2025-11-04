@@ -16,15 +16,15 @@ const Card = ({type, data}) => {
     }
     const path_to_image = "/card_images" + data.image_path;
     return ( 
-    <div className='card'>
+    <div className='myCard'>
         <div className='imageWrapper'>
-        <img height="100%" src={path_to_image} alt={data.image_path}/>
+        <img height="90%" src={path_to_image} alt={data.image_path}/>
         </div>
         <div>
         <div className='title'>{data.name}</div>
         {data.tags.map((tag) => <Label text={tag}></Label>)}
-        <div className='card_text'>{data.date}</div>
-        <div className='card_text'>{data.summary}</div>
+        <div className='myCard_text'>{data.date}</div>
+        <div className='myCard_text'>{data.summary}</div>
         {data.details_path!=="" && <div className='read_more' onClick={NavToProjDetail}>Read More →</div>}
         </div>
     </div> );

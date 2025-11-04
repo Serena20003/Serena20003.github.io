@@ -42,7 +42,7 @@ const Contact = () => {
             <p>I love getting to know new people!</p>
             <p>You can reach me through: <a href="mailto:scli@usc.edu">Email</a> or <a href="https://www.linkedin.com/in/-serena-li-/">LinkedIn</a></p>
             <form className='contact_card_container' onSubmit={submittedForm}>
-                <div className='card'>
+                <div className='myCard'>
                     <div className='contact_card_sub_grid'>
                         <div>Leave your rating of my website:</div>
                         <div>

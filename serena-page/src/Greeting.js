@@ -9,7 +9,7 @@ const Greeting = () => {
                 <section className="site-section hero" id="Home">
                 <Container>
             <Row className="align-items-center">
-                <Col md={7}>
+                <Col sm={6} md={7}>
                     <div className='title'>Hi! I'm </div>
                     <div className='title'><span className="name">SERENA LI</span></div>
                     <div className="body">
@@ -25,7 +25,7 @@ const Greeting = () => {
                         <div className="cta" onClick={() => {window.open("/iml300", '_blank')}}>Digital Art Portfolio</div>
                     </div>
                 </Col>
-                <Col md={5} className="d-none d-md-flex justify-content-center">
+                <Col sm={6} md={5} className="d-flex justify-content-center">
                     <Image fluid src="/portrait.jpeg" className="hero-portrait" />
                 </Col>
                         </Row>

@@ -227,7 +227,7 @@ canvas {
 
 .cta {
   margin-left: 1.1rem;
-  font-size: 1.2vw;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -239,7 +239,7 @@ canvas {
 .arrow-down {
   margin-top: 6vh;
   color: #4B9AFF;
-  font-size: 1.5vw;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   text-align: center;
   transition: ease 0.2s;
   margin-bottom: 3rem;

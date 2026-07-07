@@ -1,5 +1,5 @@
 import { Background } from './Background';
-import NavBar from './NavBar';
+import NavBar from './Navbar';
 import Greeting from './Greeting';
 import Experiences from './Experiences';
 import Projects from './Projects';

@@ -1,14 +1,22 @@
-import Card from './Components/Card'
-import projects from './Components/Assets/projects.json'
+import Card from './Components/Card';
+import { projectItems } from './workData';
+
 const Projects = () => {
-    return (
-        <section className="site-section" id="Projects">
-        <div className='title'>Projects</div>
-        <div className='myCardGallery'>
-        {projects.map((proj) => <Card type='proj' data={proj} key={proj.name}/>) }
-        </div>
-        </section>
-    );
-}
- 
+  return (
+    <section className="site-section" id="Projects">
+      <div className="section-kicker">Range and initiative</div>
+      <div className="title section-title">Projects</div>
+      <p className="section-intro body">
+        Research, design, creative coding, and systems work that rounds out the
+        product-engineering story.
+      </p>
+      <div className="myCardGallery">
+        {projectItems.map((proj) => (
+          <Card type="proj" data={proj} key={proj.name} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
 export default Projects;

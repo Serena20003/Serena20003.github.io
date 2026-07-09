@@ -8,7 +8,12 @@ const AboutWaterfall = ({ items = [] }) => {
       {items.map((it, i) => (
         <figure className="waterfall-item" key={i}>
           <div className="waterfall-image-wrap">
-            <img src={it.image} alt={it.title} />
+            <img
+              src={it.image}
+              alt={it.title}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <figcaption className="waterfall-caption">{it.title}</figcaption>
         </figure>

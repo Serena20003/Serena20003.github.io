@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 const Greeting = () => {
   const scrollToFeatured = (event) => {
     event.preventDefault();
-    document.getElementById('FeaturedWork')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('Experiences')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -42,9 +42,6 @@ const Greeting = () => {
               >
                 View Resume
               </button>
-              <a className="cta cta-secondary" href="/" onClick={scrollToFeatured}>
-                View Featured Work
-              </a>
               <a
                 className="cta cta-tertiary"
                 href="/iml300"
@@ -68,8 +65,8 @@ const Greeting = () => {
         </Row>
       </Container>
       <div className="arrow-down">
-        <a href="/" className="arrow-down" onClick={scrollToFeatured}>
-          Start with featured work ↓
+        <a href="/" onClick={scrollToFeatured}>
+          Get to know my experiences! ↓
         </a>
       </div>
     </section>

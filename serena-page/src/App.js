@@ -1,7 +1,5 @@
 import NavBar from './Navbar';
 import Greeting from './Greeting';
-import FeaturedWork from './FeaturedWork';
-import Highlights from './Highlights';
 import Experiences from './Experiences';
 import Projects from './Projects';
 import About from './About';
@@ -15,8 +13,6 @@ function HomePage() {
   return (
     <main>
       <Greeting />
-      <FeaturedWork />
-      <Highlights />
       <Experiences />
       <Projects />
       <About />

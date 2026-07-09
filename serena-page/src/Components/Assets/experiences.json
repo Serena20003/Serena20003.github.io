@@ -8,7 +8,7 @@
     "summary": "Building a cross-platform mobile app with contract-first APIs and AI-assisted delivery workflows for a Google Cloud-backed product.",
     "impact": "Shipping React Native features with route-controller-service patterns, spec-first development, and stronger code review quality gates.",
     "description": "Build cross-platform mobile product experiences while working across the frontend and API contract layer.",
-    "image_path": "",
+    "image_path": "/logo_optivide.avif",
     "links": [],
     "caseStudy": {
       "context": "Optivide is an active product build where I contribute to a cross-platform mobile app backed by Google Cloud services. The work matters because reliability and delivery quality have to hold up while the product surface is still evolving quickly.",
@@ -27,7 +27,7 @@
     "summary": "Leading weekly MVP delivery across a React Native app and Next.js web app for non-technical founders.",
     "impact": "Managed a 5-person team while shipping GraphQL, Firebase, Stripe, webhooks, and UX redesign work for growth-ready product flows.",
     "description": "Lead developer for a startup MVP spanning mobile, web, and user-management systems.",
-    "image_path": "",
+    "image_path": "/logo_enxti.png",
     "links": [],
     "caseStudy": {
       "context": "ENXTI needed momentum across both product execution and engineering leadership. The founders were non-technical, so shipping velocity had to be paired with strong translation between product needs and implementation decisions.",

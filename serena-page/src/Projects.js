@@ -7,8 +7,7 @@ const Projects = () => {
       <div className="section-kicker">Range and initiative</div>
       <div className="title section-title">Projects</div>
       <p className="section-intro body">
-        Research, design, creative coding, and systems work that rounds out the
-        product-engineering story.
+        Opportunities where I developed my research, design, creative coding, and systems work skills.
       </p>
       <div className="myCardGallery">
         {projectItems.map((proj) => (

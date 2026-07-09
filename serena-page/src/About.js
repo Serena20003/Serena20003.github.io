@@ -22,33 +22,17 @@ const About = () => {
 
   return (
     <section className="site-section" id="About">
-      <div className="section-kicker">Why me</div>
+      <div className="section-kicker">Who I am</div>
       <div className="title section-title">About</div>
       <div className="about-grid">
-        <div className="about-panel">
-          <h3>What I bring</h3>
+        {/* <div className="about-panel"> */}
           <p className="body">
             I like work that sits between product thinking and implementation:
             translating messy needs into clean flows, then building the systems
-            that make those flows real.
-          </p>
-        </div>
-        <div className="about-panel">
-          <h3>What I care about</h3>
-          <p className="body">
-            I care about interfaces that feel considerate, teams that can keep
-            shipping, and technical decisions that make future work easier
+            that make those flows real. I like being the bridge because I care about interfaces that feel considerate, teams that bond, and technical decisions that make future work easier
             rather than harder.
           </p>
-        </div>
-        <div className="about-panel">
-          <h3>Outside the codebase</h3>
-          <p className="body">
-            I also spend time in creative, research, and community spaces,
-            including digital art, spatial research, HackSC leadership, music,
-            and fencing.
-          </p>
-        </div>
+        {/* </div> */}
       </div>
 
       <div className="skills-groups">
@@ -67,10 +51,14 @@ const About = () => {
       </div>
 
       <div className="about-box">
-        <div className="about-box-title">Outside the resume</div>
+        <div className="about-box-title">What I enjoy life with</div>
         <div className="body">
-          A few snapshots from the parts of my life that shape how I design,
-          communicate, and lead.
+          A few snapshots from the communities in my life that shape how I think and view the world.
+        </div>
+        <div className="body">
+          I spend time in creative, research, and community spaces,
+            including digital art, spatial research, HackSC leadership, music,
+            and fencing.
         </div>
         <AboutWaterfall
           items={[

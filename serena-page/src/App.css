@@ -258,6 +258,14 @@ nav a:focus {
   text-align: center;
   margin-bottom: 0;
   text-decoration: none;
+  transition:ease-in-out;
+  transition-duration: 0.2s;
+}
+.arrow-down:hover {
+  font-size:1.1rem;
+  font-weight: 500;
+  transition:ease-in-out;
+  transition-duration: 0.2s;
 }
 
 .body,
@@ -421,7 +429,7 @@ a {
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   gap: 18px;
 }
 

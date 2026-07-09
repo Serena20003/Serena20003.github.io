@@ -14,11 +14,10 @@ const Contact = () => {
       <div className="contact-shell">
         <div className="contact-panel">
           <p className="body">
-            Currently seeking software engineering opportunities where I can
-            keep growing in frontend, mobile, and product-facing work.
+            I love exchanging perspectives with different people, that&apos;s how I grow!
           </p>
           <p className="body">
-            If you think there&apos;s a fit, I&apos;d love to talk.
+            Reach out if you&apos;d like to chat!
           </p>
         </div>
         <div className="contact-actions">

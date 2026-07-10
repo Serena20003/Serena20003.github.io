@@ -576,6 +576,15 @@ a {
   line-height: 1.6;
 }
 
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  color: #56627a;
+  font-size: 0.92rem;
+}
+
 .detail-tags {
   display: flex;
   gap: 8px;
@@ -583,11 +592,108 @@ a {
   margin-top: 18px;
 }
 
-.detail-grid {
-  margin-top: 22px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.detail-hero {
+  margin-top: 24px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.detail-hero img {
+  width: 100%;
+  display: block;
+  max-height: 460px;
+  object-fit: cover;
+}
+
+.case-study-body {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
+}
+
+.case-study-body h2,
+.case-study-body h3,
+.case-study-body h4 {
+  margin: 0;
+  color: #1f2740;
+}
+
+.case-study-body p,
+.case-study-body li,
+.case-study-body figcaption {
+  color: var(--muted);
+  font-size: clamp(0.98rem, 1.45vw, 1.08rem);
+  line-height: 1.75;
+}
+
+.case-study-body ul,
+.case-study-body ol {
+  margin: -4px 0 0 0;
+  padding-left: 22px;
+}
+
+.case-study-body blockquote {
+  margin: 0;
+  padding: 16px 18px;
+  border-left: 4px solid rgba(43, 124, 255, 0.4);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+.case-study-body blockquote p {
+  margin: 0;
+}
+
+.case-study-body code {
+  font-size: 0.92em;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(31, 39, 64, 0.08);
+  color: #1f2740;
+}
+
+.case-study-body pre {
+  margin: 0;
+  padding: 18px;
+  border-radius: 16px;
+  background: #162033;
+  overflow-x: auto;
+  box-shadow: var(--shadow-soft);
+}
+
+.case-study-body pre code {
+  padding: 0;
+  background: transparent;
+  color: #eff4ff;
+}
+
+.case-study-body a {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
+.case-study-media {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-study-media img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.case-study-rule {
+  margin: 4px 0;
+  border: none;
+  border-top: 1px solid rgba(31, 39, 64, 0.12);
 }
 
 .detail-card {
@@ -605,8 +711,7 @@ canvas {
 
 @media (max-width: 1100px) {
   .about-grid,
-  .highlights-strip,
-  .detail-grid {
+  .highlights-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -645,8 +750,7 @@ canvas {
   .myCardGallery,
   .about-grid,
   .skills-groups,
-  .highlights-strip,
-  .detail-grid {
+  .highlights-strip {
     grid-template-columns: 1fr;
   }
 

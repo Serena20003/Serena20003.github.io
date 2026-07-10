@@ -42,14 +42,6 @@ const Greeting = () => {
               >
                 View Resume
               </button>
-              <a
-                className="cta cta-tertiary"
-                href="/iml300"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Digital Art Portfolio
-              </a>
             </div>
           </Col>
           <Col sm={6} md={5} className="d-flex justify-content-center">

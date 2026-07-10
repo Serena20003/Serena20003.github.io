@@ -17,7 +17,10 @@ const Contact = () => {
             I love exchanging perspectives with different people, that&apos;s how I grow!
           </p>
           <p className="body">
-            Reach out if you&apos;d like to chat!
+            Currently seeking frontend, mobile, and product-oriented software roles for 2026.
+          </p>
+          <p className="body">
+            Reach out if you&apos;d like to chat.
           </p>
         </div>
         <div className="contact-actions">

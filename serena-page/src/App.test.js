@@ -54,6 +54,42 @@ jest.mock('./supabase-client', () => ({
 
 const { __setMockPathname } = require('react-router-dom');
 
+beforeEach(() => {
+  global.fetch = jest.fn((url) => {
+    if (String(url).includes('/case-studies/optivide.md')) {
+      return Promise.resolve({
+        ok: true,
+        text: async () => `---
+title: Optivide
+summary: A markdown-backed case study example.
+date: May 2026 - Present
+tags:
+  - React Native
+  - Express
+heroImage: /other_things_images/ssi.webp
+links:
+  - label: View Resume
+    url: /resume.pdf
+---
+
+# Overview
+
+Optivide is now rendered from a markdown file instead of hardcoded case-study cards.
+
+> This body should stay flexible so images, callouts, and custom sections are easy to add.
+
+![Process screenshot](/other_things_images/ssi.webp)
+`,
+      });
+    }
+
+    return Promise.resolve({
+      ok: false,
+      text: async () => '',
+    });
+  });
+});
+
 describe('recruiting-first portfolio experience', () => {
   test('homepage leads with a recruiting-focused headline and featured work', () => {
     __setMockPathname('/');
@@ -66,7 +102,7 @@ describe('recruiting-first portfolio experience', () => {
       screen.getByRole('button', { name: /view resume/i })
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('link', { name: /view featured work/i })
+      screen.getByRole('button', { name: /view featured work/i })
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { name: /featured work/i })
@@ -77,21 +113,26 @@ describe('recruiting-first portfolio experience', () => {
     __setMockPathname('/');
     render(<App />);
 
-    const featuredRegion = screen.getByRole('region', { name: /featured work/i });
+    const featuredHeading = screen.getByRole('heading', { name: /featured work/i });
+    const featuredRegion = featuredHeading.closest('section');
 
+    expect(featuredRegion).not.toBeNull();
     expect(within(featuredRegion).getByText(/Optivide/i)).toBeInTheDocument();
     expect(within(featuredRegion).getByText(/ENXTI/i)).toBeInTheDocument();
     expect(within(featuredRegion).getByText(/TourScout/i)).toBeInTheDocument();
   });
 
-  test('work detail route renders the case-study structure', () => {
+  test('work detail route renders markdown-driven case study content', async () => {
     __setMockPathname('/work/optivide');
     render(<App />);
 
-    expect(screen.getByText(/^Context$/i)).toBeInTheDocument();
-    expect(screen.getByText(/what i owned/i)).toBeInTheDocument();
-    expect(screen.getByText(/technical approach/i)).toBeInTheDocument();
-    expect(screen.getByText(/^Outcome$/i)).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^Optivide$/i })).toBeInTheDocument();
+    expect(screen.getByText(/markdown-backed case study example/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /overview/i })).toBeInTheDocument();
+    expect(
+      screen.getByText(/rendered from a markdown file instead of hardcoded case-study cards/i)
+    ).toBeInTheDocument();
+    expect(screen.getByAltText(/Process screenshot/i)).toBeInTheDocument();
   });
 
   test('contact area removes the site rating form in favor of direct recruiting actions', () => {

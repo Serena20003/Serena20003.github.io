@@ -55,7 +55,7 @@ jest.mock('./supabase-client', () => ({
 const { __setMockPathname } = require('react-router-dom');
 
 describe('recruiting-first portfolio experience', () => {
-  test('homepage leads with a recruiting-focused headline and featured work', () => {
+  test('homepage leads with a recruiting-focused headline and core sections', () => {
     __setMockPathname('/');
     render(<App />);
 
@@ -66,22 +66,21 @@ describe('recruiting-first portfolio experience', () => {
       screen.getByRole('button', { name: /view resume/i })
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('link', { name: /view featured work/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: /featured work/i })
+      screen.getByText(/^Experience$/i)
     ).toBeInTheDocument();
   });
 
-  test('homepage highlights current featured case studies', () => {
+  test('homepage highlights current experience cards', () => {
     __setMockPathname('/');
     render(<App />);
 
-    const featuredRegion = screen.getByRole('region', { name: /featured work/i });
+    const experienceHeading = screen.getByText(/^Experience$/i);
+    const experienceSection = experienceHeading.closest('section');
 
-    expect(within(featuredRegion).getByText(/Optivide/i)).toBeInTheDocument();
-    expect(within(featuredRegion).getByText(/ENXTI/i)).toBeInTheDocument();
-    expect(within(featuredRegion).getByText(/TourScout/i)).toBeInTheDocument();
+    expect(experienceSection).not.toBeNull();
+    expect(within(experienceSection).getByText(/Optivide/i)).toBeInTheDocument();
+    expect(within(experienceSection).getByText(/ENXTI/i)).toBeInTheDocument();
+    expect(within(experienceSection).getByText(/TourScout/i)).toBeInTheDocument();
   });
 
   test('work detail route renders the case-study structure', () => {
@@ -94,6 +93,23 @@ describe('recruiting-first portfolio experience', () => {
     expect(screen.getByText(/^Outcome$/i)).toBeInTheDocument();
   });
 
+  test('work detail route renders a public-image gallery when the work includes one', () => {
+    __setMockPathname('/work/optivide');
+    render(<App />);
+
+    expect(screen.getByRole('heading', { name: /gallery/i })).toBeInTheDocument();
+
+    const galleryImages = [
+      screen.getByAltText(/Optivide identity graphic/i),
+      screen.getByAltText(/Serena presenting research at SSI/i),
+    ];
+
+    galleryImages.forEach((image) => {
+      expect(image).toHaveAttribute('loading', 'lazy');
+      expect(image).toHaveAttribute('decoding', 'async');
+    });
+  });
+
   test('contact area removes the site rating form in favor of direct recruiting actions', () => {
     __setMockPathname('/');
     render(<App />);
@@ -101,7 +117,7 @@ describe('recruiting-first portfolio experience', () => {
     expect(
       screen.queryByText(/leave a rating for my website/i)
     ).not.toBeInTheDocument();
-    expect(screen.getByText(/currently seeking/i)).toBeInTheDocument();
+    expect(screen.getByText(/reach out if you'd like to chat/i)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /linkedin/i })).toBeInTheDocument();
   });
 

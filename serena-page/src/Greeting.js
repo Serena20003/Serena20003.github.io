@@ -1,4 +1,4 @@
-import pdf from './Components/Assets/Serena_Li_resume_26S.pdf';
+import pdf from './Components/Assets/SerenaLi_resume_26_esri_uc.pdf';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -42,14 +42,6 @@ const Greeting = () => {
               >
                 View Resume
               </button>
-              <a
-                className="cta cta-tertiary"
-                href="/iml300"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Digital Art Portfolio
-              </a>
             </div>
           </Col>
           <Col sm={6} md={5} className="d-flex justify-content-center">

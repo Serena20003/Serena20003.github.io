@@ -1,4 +1,4 @@
-import pdf from './Components/Assets/Serena_Li_resume_26S.pdf';
+import pdf from './Components/Assets/SerenaLi_resume_26_esri_uc.pdf';
 
 const Contact = () => {
   const actions = [

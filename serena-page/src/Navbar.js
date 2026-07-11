@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import pdf from './Components/Assets/Serena_Li_resume_26S.pdf';
+import pdf from './Components/Assets/SerenaLi_resume_26_esri_uc.pdf';
 
 const NavBar = () => {
   const [selected, setSelected] = useState('none');
   const location = useLocation();
-  const navBarSelections = ['FeaturedWork', 'Experiences', 'Projects', 'About', 'Contact'];
+  const navBarSelections = ['Experiences', 'Projects', 'About', 'Contact'];
   const isHomePage = location.pathname === '/';
 
   function backToTop() {
@@ -79,7 +79,7 @@ const NavBar = () => {
                 }}
                 aria-current={selection === selected ? 'page' : undefined}
               >
-                {selection === 'FeaturedWork' ? 'Featured Work' : selection}
+                {selection}
               </a>
             ))
           : detailLinks.map((item) =>

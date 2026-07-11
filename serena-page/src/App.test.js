@@ -93,16 +93,24 @@ describe('recruiting-first portfolio experience', () => {
     expect(screen.getByText(/^Outcome$/i)).toBeInTheDocument();
   });
 
-  test('work detail route renders a public-image gallery when the work includes one', () => {
+  test('work detail route renders a public-image gallery before the writeup in a horizontal carousel', () => {
     __setMockPathname('/work/optivide');
     render(<App />);
 
-    expect(screen.getByRole('heading', { name: /gallery/i })).toBeInTheDocument();
+    const galleryHeading = screen.getByRole('heading', { name: /gallery/i });
+    const contextHeading = screen.getByRole('heading', { name: /^context$/i });
+    const carousel = screen.getByLabelText(/case study gallery/i);
 
     const galleryImages = [
       screen.getByAltText(/Optivide identity graphic/i),
       screen.getByAltText(/Serena presenting research at SSI/i),
     ];
+
+    expect(
+      galleryHeading.compareDocumentPosition(contextHeading) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(carousel).toHaveClass('detail-gallery-carousel');
 
     galleryImages.forEach((image) => {
       expect(image).toHaveAttribute('loading', 'lazy');

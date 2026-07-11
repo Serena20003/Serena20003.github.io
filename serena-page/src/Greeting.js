@@ -32,6 +32,33 @@ const Greeting = () => {
               <div className="hero-meta-pill">Frontend + product systems</div>
               <div className="hero-meta-pill">GIS + research depth</div>
             </div>
+  const scrollToFeatured = (event) => {
+    event.preventDefault();
+    document.getElementById('Experiences')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <section className="site-section hero" id="Home">
+      <Container>
+        <Row className="align-items-center">
+          <Col sm={6} md={7}>
+            <div className="eyebrow">Los Angeles · USC MS/BS Computer Science · 2026</div>
+            <h1 className="hero-title">Serena Li</h1>
+            <p className="hero-headline">
+              Product-minded software engineer focused on frontend, mobile, and
+              user-facing systems.
+            </p>
+            <div className="body hero-copy">
+              I build interfaces that feel polished for users and practical for
+              teams to ship. My recent work spans React Native, full-stack MVP
+              delivery, geospatial tooling, and research-backed product design.
+            </div>
+
+            <div className="hero-meta">
+              <div className="hero-meta-pill">React Native + TypeScript</div>
+              <div className="hero-meta-pill">Frontend + product systems</div>
+              <div className="hero-meta-pill">GIS + research depth</div>
+            </div>
 
             <div className="hero-actions">
               <button
@@ -66,3 +93,4 @@ const Greeting = () => {
 };
 
 export default Greeting;
+

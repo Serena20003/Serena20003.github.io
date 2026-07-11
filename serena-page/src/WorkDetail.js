@@ -45,21 +45,12 @@ const WorkDetail = () => {
           ))}
         </div>
 
-        <div className="detail-grid">
-          {sections.map((section) => (
-            <section className="detail-card" key={section.key}>
-              <h2>{section.title}</h2>
-              <p className="body">{work.caseStudy[section.key]}</p>
-            </section>
-          ))}
-        </div>
-
         {Array.isArray(work.gallery) && work.gallery.length > 0 && (
           <section className="detail-gallery-section" aria-labelledby="detail-gallery-heading">
             <h2 className="detail-gallery-heading" id="detail-gallery-heading">
               Gallery
             </h2>
-            <div className="detail-gallery-grid">
+            <div className="detail-gallery-carousel" aria-label="Case study gallery">
               {work.gallery.map((image) => (
                 <figure className="detail-gallery-item" key={image.src}>
                   <img
@@ -76,6 +67,15 @@ const WorkDetail = () => {
             </div>
           </section>
         )}
+
+        <div className="detail-grid">
+          {sections.map((section) => (
+            <section className="detail-card" key={section.key}>
+              <h2>{section.title}</h2>
+              <p className="body">{work.caseStudy[section.key]}</p>
+            </section>
+          ))}
+        </div>
 
         {work.links && work.links.length > 0 && (
           <div className="detail-links">

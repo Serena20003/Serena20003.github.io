@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import pdf from './Components/Assets/Serena_Li_resume_26S.pdf';
+import pdf from './Components/Assets/SerenaLi_resume_26_esri_uc.pdf';
 
 const NavBar = () => {
   const [selected, setSelected] = useState('none');
   const location = useLocation();
-  const navBarSelections = ['FeaturedWork', 'Experiences', 'Projects', 'About', 'Contact'];
+  const navBarSelections = ['Experiences', 'Projects', 'About', 'Contact'];
   const isHomePage = location.pathname === '/';
 
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    setSelected('Home');
+  }
   function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -23,7 +28,25 @@ const NavBar = () => {
     navClicked(selection);
     document.getElementById(selection)?.scrollIntoView({ behavior: 'smooth' });
   }
+  function navClicked(selection) {
+    setSelected(selection);
+  }
 
+  function scrollToSection(event, selection) {
+    event.preventDefault();
+    navClicked(selection);
+    document.getElementById(selection)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  useEffect(() => {
+    if (!isHomePage) {
+      return undefined;
+    }
+
+    const sections = navBarSelections
+      .map((section) => document.getElementById(section))
+      .filter(Boolean);
+    if (!sections.length) return undefined;
   useEffect(() => {
     if (!isHomePage) {
       return undefined;
@@ -44,7 +67,26 @@ const NavBar = () => {
       },
       { root: null, rootMargin: '-40% 0px -40% 0px', threshold: 0 }
     );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setSelected(entry.target.id);
+          }
+        });
+      },
+      { root: null, rootMargin: '-40% 0px -40% 0px', threshold: 0 }
+    );
 
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [isHomePage]);
+
+  const detailLinks = [
+    { label: 'Home', to: '/' },
+    { label: 'Resume', href: pdf },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/-serena-li-/' },
+  ];
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, [isHomePage]);
@@ -79,7 +121,7 @@ const NavBar = () => {
                 }}
                 aria-current={selection === selected ? 'page' : undefined}
               >
-                {selection === 'FeaturedWork' ? 'Featured Work' : selection}
+                {selection}
               </a>
             ))
           : detailLinks.map((item) =>
@@ -105,3 +147,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+

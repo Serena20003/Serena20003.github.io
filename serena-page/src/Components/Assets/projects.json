@@ -1,43 +1,86 @@
 [
-	{
-		"name": "Mental Health Spatial Distribution Research",
-		"tags": [
-			"GIS",
-			"Research",
-			"Spatial Data Analysis",
-			"Conference Presentation"
-		],
-		"date": "July 2025 - Present",
-		"summary": "Spatial research with SSI faculty; presented research poster at APCG 2025",
-		"description": "Spatial research with SSI faculty; presented research poster at APCG 2025",
-		"image_path": "/logo_ssi.avif",
-		"details_path": "https://drive.google.com/file/d/1PAz19VbO59gczHOGO1j5c77uOxNjh-32/view?usp=sharing"
-	},
-	{
-		"name": "C++ Games Class project",
-		"tags": ["C++", "Design Principle", "School Project"],
-		"date": "January 2025 - May 2025",
-		"summary": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
-		"description": "Fun games made with C++ while learning important design patterns like Factory and Decoration",
-		"image_path": "/logo_usc.png",
-		"details_path": "repo/Game--"
-	},
-	{
-		"name": "CS Capstone: Fashion Marketplace App",
-		"tags": ["React Native", "Scrum", "MongoDB", "GraphQL"],
-		"date": "January 2025 - May 2025",
-		"summary": "Led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
-		"description": "Worked with team of 6, led development of GraphQL queries for Shopify integration and API customization with MongoDB for user information management",
-		"image_path": "/logo_usc.png",
-		"details_path": ""
-	},
-	{
-		"name": "Workday Job Apps User Interface Research Project",
-		"tags": ["UI/UX", "Research", "School Project"],
-		"date": "August 2024 - Dec 2024",
-		"summary": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
-		"description": "Designed an interactive prototype using Figma through data analysis on user inspection, inquiries, and usability testing.",
-		"image_path": "/logo_usc.png",
-		"details_path": "http://tinyurl.com/2s4ftnzh"
-	}
+  {
+    "name": "Mental Health Spatial Distribution Research",
+    "slug": "mental-health-research",
+    "featured": false,
+    "tags": ["GIS", "Research", "Spatial Analysis", "Conference"],
+    "date": "July 2025 - Present",
+    "summary": "Spatial analysis research with SSI faculty that culminated in an APCG 2025 poster presentation.",
+    "impact": "Translated geospatial analysis into a conference-ready research narrative and visual presentation.",
+    "description": "Research project exploring spatial patterns in mental health data.",
+    "image_path": "/logo_ssi.avif",
+    "links": [
+      {
+        "label": "View Poster",
+        "url": "https://drive.google.com/file/d/1PAz19VbO59gczHOGO1j5c77uOxNjh-32/view?usp=sharing"
+      }
+    ],
+    "caseStudy": {
+      "context": "This project sits at the intersection of data, geography, and public-facing storytelling. The goal was to explore how spatial analysis can reveal patterns that are harder to see in raw data alone.",
+      "owned": "I contributed to the analysis and presentation work, helping shape how the findings were communicated in a conference-poster format.",
+      "constraints": "Research work has to balance technical accuracy with clarity for an audience that may not be deep in the methodology.",
+      "technicalApproach": "I used geospatial analysis methods and poster-oriented visualization choices to make the research legible beyond a purely academic code workflow.",
+      "outcome": "The work became a concrete research artifact that was strong enough to present at APCG 2025."
+    }
+  },
+  {
+    "name": "Workday Job Applications UI Research",
+    "slug": "workday-research",
+    "featured": false,
+    "tags": ["UI/UX", "Figma", "User Research"],
+    "date": "August 2024 - December 2024",
+    "summary": "Redesigned a job-application workflow using inspection, inquiry, and usability-testing insights.",
+    "impact": "Turned research findings into a more intuitive interactive prototype for a frustrating real-world flow.",
+    "description": "Human-computer interaction project focused on application usability.",
+    "image_path": "/logo_usc.png",
+    "links": [
+      {
+        "label": "View Prototype",
+        "url": "http://tinyurl.com/2s4ftnzh"
+      }
+    ],
+    "caseStudy": {
+      "context": "Applying for jobs through enterprise systems is often a painful user experience. This project looked at the Workday flow through an HCI lens to understand where friction accumulates and how a redesign could address it.",
+      "owned": "I synthesized research findings, designed the prototype in Figma, and translated user pain points into clearer interaction choices.",
+      "constraints": "The challenge was not just to make the interface prettier, but to meaningfully reduce confusion in a workflow with many steps and competing information demands.",
+      "technicalApproach": "I used inspection, inquiry, and usability testing as the backbone for the design decisions, then built an interactive prototype that embodied those findings.",
+      "outcome": "The result was a more legible application flow and a stronger example of how I connect user research to interface decisions."
+    }
+  },
+  {
+    "name": "Digital Art and Creative Coding Portfolio",
+    "slug": "",
+    "featured": false,
+    "tags": ["JavaScript", "Creative Coding", "Interaction"],
+    "date": "2024 - Present",
+    "summary": "A collection of interactive web art projects exploring motion, storytelling, and playful frontend experimentation.",
+    "impact": "Shows the more expressive side of my JavaScript work and how I design for feeling, not only utility.",
+    "description": "Creative portfolio for digital interactive art work.",
+    "image_path": "/logo_usc.png",
+    "links": [
+      {
+        "label": "Open Art Portfolio",
+        "url": "/iml300"
+      }
+    ],
+    "caseStudy": null
+  },
+  {
+    "name": "C++ Games and Network Systems Coursework",
+    "slug": "",
+    "featured": false,
+    "tags": ["C++", "SDL", "Networking", "Systems"],
+    "date": "2024 - 2025",
+    "summary": "Built classic-game recreations and a peer-to-peer networking project to deepen systems and architecture fundamentals.",
+    "impact": "Applied collision detection, design patterns, multithreading, and network communication in code.",
+    "description": "Coursework spanning game development and internetworking foundations.",
+    "image_path": "/logo_usc.png",
+    "links": [
+      {
+        "label": "Open Game Projects",
+        "url": "/Game--"
+      }
+    ],
+    "caseStudy": null
+  }
 ]

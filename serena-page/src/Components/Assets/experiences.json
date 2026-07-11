@@ -1,47 +1,104 @@
 [
-	{
-		"name": "GIS and Application Solutions @ LADOT",
-		"tags": ["Object Recognition Model Training", "Typescript", "Python"],
-		"date": "Sep 2025 - Present",
-		"summary": "I build features for internal web app from user request, and create Python scripts to increase efficiency in training image object recgonizing models",
-		"description": "Created user flow for customizing multiple dynamic review displays on external sites.",
-		"image_path": "/logo_ladot.avif",
-		"details_path": ""
-	},
-	{
-		"name": "Software Engineer Intern @ TourScout",
-		"tags": ["API Generation", "React", "Figma"],
-		"date": "Jun 2025 - Aug 2025",
-		"summary": "Created user flow for customizing multiple dynamic review displays on external sites.",
-		"description": "Created user flow for customizing multiple dynamic review displays on external sites.",
-		"image_path": "/logo_tourscout.png",
-		"details_path": ""
-	},
-	{
-		"name": "iOS App Development course Learning Assistant @ USC",
-		"tags": ["Tutoring", "Swift"],
-		"date": "August 2024 - May 2025",
-		"summary": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
-		"description": "Reinforced students' understanding of the course through both in-person office hours and async Q&A",
-		"image_path": "/logo_usc.png",
-		"details_path": ""
-	},
-	{
-		"name": "Mobile App Developer @ Hemut",
-		"tags": ["React Native", "Figma"],
-		"date": "Dec 2024 - Apr 2025",
-		"summary": "Led the front-end development of mobile prototype centering assisting fleet drivers in routing, updating status, and vocal commands for fleet management startup",
-		"description": "Created mobile prototype centering assisting fleet drivers in routing, updating status, and vocal commands for fleet management startup",
-		"image_path": "/logo_hemut.png",
-		"details_path": ""
-	},
-	{
-		"name": "Project Management Co-op on Marketing Team @ Blu Bathworks",
-		"tags": ["WordPress", "Python", "Monday.com"],
-		"date": "Jun 2023 - Aug 2023",
-		"summary": "Coordinated WordPress website project and accelerated website launch by 4 months",
-		"description": "Programmatically-wise, programmed Python programs with CSV handling for product data to/from multiple platforms to reduce manual work by 85%. Recorded 30+ WordPress tutorials for staff to maintain the website to save costs of external developers",
-		"image_path": "/logo_blu.jpg",
-		"details_path": ""
-	}
+  {
+    "name": "Software Developer Fellow @ Optivide",
+    "slug": "optivide",
+    "featured": true,
+    "tags": ["React Native", "Express", "Google Cloud", "GitHub Actions"],
+    "date": "May 2026 - Present",
+    "summary": "Building a cross-platform mobile app with contract-first APIs and AI-assisted delivery workflows for a Google Cloud-backed product.",
+    "impact": "Shipping React Native features with route-controller-service patterns, spec-first development, and stronger code review quality gates.",
+    "description": "Build cross-platform mobile product experiences while working across the frontend and API contract layer.",
+    "image_path": "/logo_optivide.avif",
+    "links": [],
+    "caseStudy": {
+      "context": "Optivide is an active product build where I contribute to a cross-platform mobile app backed by Google Cloud services. The work matters because reliability and delivery quality have to hold up while the product surface is still evolving quickly.",
+      "owned": "I own user-facing React Native features and contribute to the spec-first workflow around the backend contract. I also use AI intentionally in code review and implementation loops to keep delivery fast without lowering the bar on quality.",
+      "constraints": "The product is moving quickly, which means features have to fit an established Express route-controller-service architecture and stay aligned with a contract-first API shape instead of becoming one-off frontend patches.",
+      "technicalApproach": "I build within a typed React Native surface, coordinate against backend contracts early, and rely on GitHub Actions plus structured review loops to catch integration issues before they compound.",
+      "outcome": "The result is a more dependable shipping process for mobile features: faster iteration, cleaner boundaries between frontend and backend work, and code that is easier for teammates to review and extend."
+    }
+  },
+  {
+    "name": "Lead Software Developer @ ENXTI",
+    "slug": "enxti",
+    "featured": true,
+    "tags": ["React Native", "Next.js", "TypeScript", "Stripe"],
+    "date": "December 2025 - Present",
+    "summary": "Leading weekly MVP delivery across a React Native app and Next.js web app for non-technical founders.",
+    "impact": "Managed a 5-person team while shipping GraphQL, Firebase, Stripe, webhooks, and UX redesign work for growth-ready product flows.",
+    "description": "Lead developer for a startup MVP spanning mobile, web, and user-management systems.",
+    "image_path": "/logo_enxti.png",
+    "links": [],
+    "caseStudy": {
+      "context": "ENXTI needed momentum across both product execution and engineering leadership. The founders were non-technical, so shipping velocity had to be paired with strong translation between product needs and implementation decisions.",
+      "owned": "I supervised a 5-person developer team, planned weekly feature work, implemented product features myself, and handled parts of the integration surface across GraphQL, MongoDB-style user management concerns, Stripe, and Firebase-backed workflows.",
+      "constraints": "The MVP had to move quickly across both a React Native app and a Next.js web app, which meant avoiding fragmented decisions and keeping the team aligned around the same product priorities each week.",
+      "technicalApproach": "I treated the work as both a delivery and coordination problem: breaking features into shippable slices, driving UX redesign decisions, wiring integrations like webhooks and payments, and keeping implementation practical for a small team.",
+      "outcome": "The team was able to ship weekly product improvements toward an MVP that was more coherent for users and more sustainable for future development."
+    }
+  },
+  {
+    "name": "GIS and Software Engineer Volunteer @ LADOT",
+    "slug": "ladot",
+    "featured": false,
+    "tags": ["Python", "YOLO", "Mapillary API", "GIS"],
+    "date": "September 2025 - December 2025",
+    "summary": "Automated geospatial model-training workflows for city engineers using Python, Mapillary, and YOLO tooling.",
+    "impact": "Raised object-detection confidence above 90% and accelerated engineers' workflows by 20% with reusable automation.",
+    "description": "Supported geospatial engineering workflows with automation and model-training operations.",
+    "image_path": "/logo_ladot.avif",
+    "links": [],
+    "caseStudy": {
+      "context": "LADOT needed better support for object-detection model training and the repetitive workflow around sourcing and preparing imagery for engineering use.",
+      "owned": "I administered parts of the model-training workflow, wrote reusable Python automation, and interfaced with the Mapillary API to reduce manual work for engineers.",
+      "constraints": "The work had to fit existing public-sector workflows, where accuracy mattered and improvements had to be practical for engineers using the outputs downstream.",
+      "technicalApproach": "I combined Python automation with geospatial tooling and model-training operations, focusing on repeatability so the same steps could be reused instead of manually re-created.",
+      "outcome": "The workflow became faster and more reliable, with confidence scores pushed above 90% and internal process time improved by roughly 20%."
+    }
+  },
+  {
+    "name": "Software Engineer Intern @ TourScout",
+    "slug": "tourscout",
+    "featured": true,
+    "tags": ["React", "Supabase", "Data Visualization", "Product"],
+    "date": "June 2025 - July 2025",
+    "summary": "Revamped customer review-widget creation so a founder could manage embeddable experiences without manual updates.",
+    "impact": "Built real-time CRUD dashboards and secure Supabase schemas, increasing retention by 40%.",
+    "description": "Product-focused frontend internship centered on self-serve tooling and real-time updates.",
+    "image_path": "/logo_tourscout.png",
+    "links": [],
+    "caseStudy": {
+      "context": "TourScout needed more scalable customer tooling so a non-technical founder would not need to manually maintain dynamic review and display experiences.",
+      "owned": "I redesigned the review-button creation flow, built a real-time information-visualization panel with multi-tenant CRUD functionality, and designed secure Supabase schemas with row-level security.",
+      "constraints": "The product had to feel easy for non-technical users while still supporting real-time updates and safe access to customer data.",
+      "technicalApproach": "I focused on user flow clarity first, then connected the frontend to Supabase-backed data operations and real-time updates so the system felt self-serve instead of maintenance-heavy.",
+      "outcome": "The founder could manage the product with much less manual upkeep, and the resulting dashboard improvements contributed to a 40% increase in retention."
+    }
+  },
+  {
+    "name": "iOS App Development Learning Assistant @ USC",
+    "slug": "",
+    "featured": false,
+    "tags": ["Swift", "Teaching", "Mentorship"],
+    "date": "August 2024 - May 2025",
+    "summary": "Supported iOS students through office hours, async Q&A, and assignment feedback across the semester.",
+    "impact": "Helped 15 students strengthen Swift fundamentals and ship better assignments with faster unblock time.",
+    "description": "Teaching and mentorship role for USC's iOS development course.",
+    "image_path": "/logo_usc.png",
+    "links": [],
+    "caseStudy": null
+  },
+  {
+    "name": "Project Management Intern @ Blu Bathworks",
+    "slug": "",
+    "featured": false,
+    "tags": ["Python", "WordPress", "Operations"],
+    "date": "June 2023 - August 2023",
+    "summary": "Coordinated a WordPress relaunch while rebuilding product-data operations for a manufacturing brand.",
+    "impact": "Cut launch time by 4 months and manual operations by 85% across 1K+ SKUs.",
+    "description": "Operations and web-launch work with a strong automation component.",
+    "image_path": "/logo_blu.jpg",
+    "links": [],
+    "caseStudy": null
+  }
 ]

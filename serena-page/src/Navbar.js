@@ -13,11 +13,6 @@ const NavBar = () => {
     document.documentElement.scrollTop = 0;
     setSelected('Home');
   }
-  function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    setSelected('Home');
-  }
 
   function navClicked(selection) {
     setSelected(selection);
@@ -28,25 +23,7 @@ const NavBar = () => {
     navClicked(selection);
     document.getElementById(selection)?.scrollIntoView({ behavior: 'smooth' });
   }
-  function navClicked(selection) {
-    setSelected(selection);
-  }
 
-  function scrollToSection(event, selection) {
-    event.preventDefault();
-    navClicked(selection);
-    document.getElementById(selection)?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  useEffect(() => {
-    if (!isHomePage) {
-      return undefined;
-    }
-
-    const sections = navBarSelections
-      .map((section) => document.getElementById(section))
-      .filter(Boolean);
-    if (!sections.length) return undefined;
   useEffect(() => {
     if (!isHomePage) {
       return undefined;
@@ -67,26 +44,7 @@ const NavBar = () => {
       },
       { root: null, rootMargin: '-40% 0px -40% 0px', threshold: 0 }
     );
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setSelected(entry.target.id);
-          }
-        });
-      },
-      { root: null, rootMargin: '-40% 0px -40% 0px', threshold: 0 }
-    );
 
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
-  }, [isHomePage]);
-
-  const detailLinks = [
-    { label: 'Home', to: '/' },
-    { label: 'Resume', href: pdf },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/-serena-li-/' },
-  ];
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, [isHomePage]);
@@ -147,4 +105,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-

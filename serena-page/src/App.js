@@ -13,9 +13,9 @@ function HomePage() {
   return (
     <main>
       <Greeting />
+      <About />
       <Experiences />
       <Projects />
-      <About />
       <Contact />
     </main>
   );

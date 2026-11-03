@@ -5,7 +5,7 @@ import pdf from './Components/Assets/SerenaLi_resume_26_esri_uc.pdf';
 const NavBar = () => {
   const [selected, setSelected] = useState('none');
   const location = useLocation();
-  const navBarSelections = ['Experiences', 'Projects', 'About', 'Contact'];
+  const navBarSelections = ['About', 'Experiences', 'Projects', 'Contact'];
   const isHomePage = location.pathname === '/';
 
   function backToTop() {

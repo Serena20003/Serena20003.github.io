@@ -10,7 +10,6 @@
     "description": "Neural database research for area-weighted temperature queries over geographic regions and time windows.",
     "image_path": "/logo_usc.png",
     "links": [
-      { "label": "View Research Code", "url": "https://github.com/Serena20003/weatherDB" }
     ],
     "caseStudy": {
       "context": "WeatherDB explores whether a neural database can answer spatiotemporal aggregate queries over large climate datasets. The target is the area-weighted mean 2m temperature for a geographic region and time window using ERA5 hourly data.",

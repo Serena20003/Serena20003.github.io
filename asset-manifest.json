@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.e44cb75d.css",
-    "main.js": "/static/js/main.06193067.js",
+    "main.js": "/static/js/main.b3234942.js",
     "static/js/453.55dc0373.chunk.js": "/static/js/453.55dc0373.chunk.js",
-    "static/media/SerenaLi_resume_26_esri_uc.pdf": "/static/media/SerenaLi_resume_26_esri_uc.ee107dc7aed57c0b1ab3.pdf",
+    "static/media/Serena_Li_USC_Resume.pdf": "/static/media/Serena_Li_USC_Resume.e62b4d2f657943cd3394.pdf",
     "index.html": "/index.html",
     "main.e44cb75d.css.map": "/static/css/main.e44cb75d.css.map",
-    "main.06193067.js.map": "/static/js/main.06193067.js.map",
+    "main.b3234942.js.map": "/static/js/main.b3234942.js.map",
     "453.55dc0373.chunk.js.map": "/static/js/453.55dc0373.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e44cb75d.css",
-    "static/js/main.06193067.js"
+    "static/js/main.b3234942.js"
   ]
 }

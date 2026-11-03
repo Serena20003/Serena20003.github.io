@@ -1,10 +1,11 @@
-import pdf from './Components/Assets/SerenaLi_resume_26_esri_uc.pdf';
+import pdf from './Components/Assets/Serena_Li_USC_Resume.pdf';
 
 const Contact = () => {
   const actions = [
     { label: 'Email', href: 'mailto:scli@usc.edu' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/-serena-li-/' },
     { label: 'Resume', href: pdf },
+    { label: 'Geospatial Portfolio', href: 'https://arcg.is/aDq4z0' },
   ];
 
   return (

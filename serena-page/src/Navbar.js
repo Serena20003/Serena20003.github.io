@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import pdf from './Components/Assets/SerenaLi_resume_26_esri_uc.pdf';
+import pdf from './Components/Assets/Serena_Li_USC_Resume.pdf';
 
 const NavBar = () => {
   const [selected, setSelected] = useState('none');
@@ -52,6 +52,7 @@ const NavBar = () => {
   const detailLinks = [
     { label: 'Home', to: '/' },
     { label: 'Resume', href: pdf },
+    { label: 'Geospatial Portfolio', href: 'https://arcg.is/aDq4z0' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/-serena-li-/' },
   ];
 

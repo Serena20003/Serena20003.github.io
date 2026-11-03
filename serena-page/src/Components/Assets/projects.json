@@ -1,5 +1,47 @@
 [
   {
+    "name": "WeatherDB — Climate Database Query Model",
+    "slug": "weatherdb",
+    "featured": false,
+    "tags": ["Research", "PyTorch", "ERA5", "Optuna", "Geospatial ML"],
+    "date": "June 2025 - Present",
+    "summary": "Researching neural models for spatiotemporal climate queries, comparing coordinate-based and polygon-vector representations on a 19,500-query ERA5 benchmark.",
+    "impact": "Sole technical contributor; automated hyperparameter studies with up to 200 completed trials on USC CARC clusters.",
+    "description": "Neural database research for area-weighted temperature queries over geographic regions and time windows.",
+    "image_path": "/logo_usc.png",
+    "links": [
+      { "label": "View Research Code", "url": "https://github.com/Serena20003/weatherDB" }
+    ],
+    "caseStudy": {
+      "context": "WeatherDB explores whether a neural database can answer spatiotemporal aggregate queries over large climate datasets. The target is the area-weighted mean 2m temperature for a geographic region and time window using ERA5 hourly data.",
+      "owned": "As the sole technical contributor, I built the PyTorch pipeline and a 19,500-query ERA5 benchmark to compare coordinate-based and polygon-vector query representations.",
+      "constraints": "Large climate grids require memory-conscious data processing, accurate area-weighted labels, and comparable query workloads across model configurations. Extending rectangle predicates to arbitrary polygons adds geometric complexity.",
+      "technicalApproach": "I use area-weighted aggregation and prefix-sum indexing for label generation, then compare neural query representations with Fourier encoding and multilayer perceptrons. Optuna automates hyperparameter experiments on USC CARC computing clusters, with configurations compared by validation mean absolute error.",
+      "outcome": "The research has produced a reusable benchmark and automated experiment pipeline, including studies with up to 200 completed trials. Work on polygon query representations is ongoing."
+    }
+  },
+  {
+    "name": "Runway / See Your Power",
+    "slug": "runway",
+    "featured": false,
+    "tags": ["React", "Python", "IBM watsonx", "Hackathon", "Dual-Use"],
+    "date": "October 2026",
+    "summary": "A power-outage preparedness prototype that connects a weather-style risk interface with personalized household preparation guidance.",
+    "impact": "Best Build with IBM Bob winner at the InnovateLA Dual-Use Hackathon; built in 24 hours.",
+    "description": "React and Python hackathon prototype for outage forecasting and household preparedness.",
+    "image_path": "",
+    "links": [
+      { "label": "View Project Code", "url": "https://github.com/Serena20003/see_your_power" }
+    ],
+    "caseStudy": {
+      "context": "Runway, also called See Your Power, helps households explore power-outage risk and turn it into preparation steps. The project began at the InnovateLA Dual-Use Hackathon in October 2026.",
+      "owned": "As lead builder, I developed the React and Python prototype in 24 hours using IBM Bob Coding Agent, refined the interface, and integrated IBM's Watson AI platform into the chatbot for personalized preparation guidance.",
+      "constraints": "The hackathon time limit and gaps in labeled outage data required a focused prototype. Synthetic data supported forecasting experiments; sample risk values demonstrate the experience and are not validated outage predictions.",
+      "technicalApproach": "The React interface presents a weather-style power forecast and a household plan. The Python service supports the forecast pipeline and watsonx assistant integration, while the prototype explores how household needs can shape preparation guidance.",
+      "outcome": "Runway won Best Build with IBM Bob at the InnovateLA Dual-Use Hackathon. The prototype demonstrates the preparedness workflow; real forecasting still requires training, calibration, and evaluation against verified outage records."
+    }
+  },
+  {
     "name": "Mental Health Spatial Distribution Research",
     "slug": "mental-health-research",
     "featured": false,
